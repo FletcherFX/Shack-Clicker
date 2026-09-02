@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shack Clicker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <header class="top-bar">
+            <div class="title">SHACK CLICKER</div>
+            <div class="currencies">
+                <div class="currency-box">
+                    <img src="assets/coin.webp" alt="Coins" class="currency-icon">
+                    <span id="coin-balance">0.00</span>
+                </div>
+                <div class="currency-box">
+                    <img src="assets/diamond.webp" alt="Gems" class="currency-icon">
+                    <span id="gem-balance">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="farm-section">
+                <div class="farm-stats">
+                    Добыча: <span id="click-power">0.01</span> / клик
+                </div>
+                <button id="farm-btn" class="action-btn">ФАРМ</button>
+                
+                <div class="exchange-box">
+                    <div class="exchange-info">Курс: 50.00 Монет = 1 Алмаз</div>
+                    <button id="exchange-btn" class="action-btn alt-btn">Обменять</button>
+                </div>
+
+                <div class="inventory-section">
+                    <div class="section-title">Экипировано</div>
+                    <div id="inventory-grid" class="inventory-grid">
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section">
+                <div class="shop-background">
+                    <div id="shop-grid" class="shop-grid">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
